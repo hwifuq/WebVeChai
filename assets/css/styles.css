@@ -158,7 +158,7 @@ strong{
 }
 
 .main-content .service-block ul li::before{
-    content:"~ ";
+    
     color: goldenrod ;
 }
 .main-content .service-block ul li,
