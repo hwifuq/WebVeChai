@@ -77,8 +77,8 @@ strong{
 .header .nav a:hover{
     color: var(--primary-color);
     text-shadow: 1px 0 0 currentColor;
-    border-bottom: 1px solid currentColor;
-    border-radius: 12px;
+    /* border-bottom: 1px solid currentColor; */
+    /* border-radius: 12px; */
 }
 .header .action{
     margin-left: 49px;
@@ -215,15 +215,10 @@ strong{
 .contact .action{
     /* margin-left: 250px; */
 }
-.contact .action ul li:first-child{
-    margin-left: 74px;
-}
-.contact .action ul li+li{
+.contact .action ul li{
     margin-left: 104px;
 }
-.contact .action ul li+li+li{
-    margin-left: 154px;
-}
+
 .contact .action ul li{
     font-size: 1.8rem;
     line-height: 1.67;
@@ -287,4 +282,9 @@ strong{
     color: #225859;
     font-size: 24px;
     border: solid 1px #225859;
+}
+.contact .social-media li a:hover{
+    color: #fff;
+    background: #225859;
+    border: 1px solid #000;
 }
