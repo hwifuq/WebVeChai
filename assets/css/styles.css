@@ -3,6 +3,7 @@
 }
 :root{
     --primary-color: #ffb766;
+    --bg-color: #F6F6F6;
 }
 html{
     font-size: 62.5%;
@@ -76,8 +77,8 @@ strong{
 .header .nav a:hover{
     color: var(--primary-color);
     text-shadow: 1px 0 0 currentColor;
-    border-bottom: 2px solid currentColor;
-    border-radius: 50px;
+    border-bottom: 1px solid currentColor;
+    border-radius: 12px;
 }
 .header .action{
     margin-left: 49px;
@@ -90,8 +91,14 @@ strong{
 .hero .body{
     /* background: #202020;; */
     display: flex;
+    margin-bottom: 24px;
     padding-top: 16px;
     padding-bottom: 16px;
+    border: solid 1px #225859 ;
+    border-top: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: var(--bg-color);
 }
 .hero .media-block{
     width: 50%;
@@ -136,19 +143,18 @@ strong{
 .main-content{
     
 }
-.main-content .content{
+.main-content .service{
     background-color:#225859;
-    border-top-left-radius: 10px;
+    border-radius: 8px;
 }
-.main-content .first-body{
+.main-content .body{
     padding: 24px 0 24px 24px;
     display: flex;
 }
 .main-content .service-block{
     width: 70%;
 }
-.main-content .service-block .heading,
-.main-content .rate-block .heading{
+.main-content .heading{
     position: relative;
     font-weight: 700;
     font-size: 28px;
@@ -157,10 +163,6 @@ strong{
     color: var(--primary-color);
 }
 
-.main-content .service-block ul li::before{
-    
-    color: goldenrod ;
-}
 .main-content .service-block ul li,
 .main-content .rate-block ul li{
     font-size: 1.8rem;
@@ -197,4 +199,92 @@ strong{
     text-align: center;
     letter-spacing: -0.02em;
     color: #ffffff;
+}
+/* =========================Contact========================== */
+.main-content .contact{
+    background-color:var(--bg-color);
+    padding: 24px 0 0 0  ;
+    border-radius: 8px;
+    margin-top: 24px;
+    /* background-color: #225859; */
+    border: solid 1px #225859 ;
+}
+.contact .heading{
+    margin-left: 24px;
+}
+.contact .action{
+    /* margin-left: 250px; */
+}
+.contact .action ul li:first-child{
+    margin-left: 74px;
+}
+.contact .action ul li+li{
+    margin-left: 104px;
+}
+.contact .action ul li+li+li{
+    margin-left: 154px;
+}
+.contact .action ul li{
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+    font-weight: 700;
+}
+.contact .action li input{
+    margin: 8px 0;
+    width: 460px;
+    height: 48px;
+    font-size: 1.2rem;
+    line-height: 1.67;
+    font-weight: 700;
+    border: solid 2px #225859;
+    border-radius: 4px;
+}
+.contact .action li input:focus{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #000;
+    border: solid 1px #000;
+}
+.contact .action button{
+    margin: 8px 0 24px 0;
+    width: 120px;
+    height: 36px;
+    margin-left: 204px;
+    background-color:  #225859;
+    color: #fff;
+    border: solid 1px #000;
+}
+.contact .contact-block{
+    display: flex;
+}
+.contact-block .action{
+    width: 70%;
+}
+.contact .social-media::before{
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: -8px;
+    left: -2px;
+}
+.contact .social-media{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #225859;
+}
+.contact .social-media ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+}
+.contact .social-media li a{
+    padding: 8px;
+    color: #225859;
+    font-size: 24px;
+    border: solid 1px #225859;
 }
