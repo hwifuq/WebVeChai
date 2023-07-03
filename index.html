@@ -59,8 +59,7 @@
                         <h1 class="heading">WebVeChai</h1>
                         <p class="desc">Tụi mình <strong>thành lập chiếc web này</strong> nhằm để tạo ra 
                             <strong>sự kết nối</strong> giữa <strong>người bán ve chai</strong> và 
-                            <strong>các điểm bán ve chai</strong> trong <strong>thành phố Hồ Chí Minh</strong> 
-                            với nhiều<strong> tiện ích</strong>.
+                            <strong>các điểm thu mua ve chai</strong> trong <strong>thành phố Hồ Chí Minh</strong>.
                         </p>
                     </div>
                 </div>
@@ -68,9 +67,10 @@
         </div>
         <div class="main-content">
             <div class="content">
-                <div class="service">
+
+                <div class="advantage">
                     <div class="body">
-                        <div class="service-block">
+                        <div class="advantage-block">
                             <h2 class="heading">Những Tiện Ích</h2>
                             <ul>
                                 <li>
@@ -160,24 +160,27 @@
                     </div>
                 </div>
                 <div class="contact">
-                    <h2 class="heading">Liên Hệ</h2>
-                    <div class="contact-block">
-                        <form class="action">
-                            <ul>
-                                <li>
-                                    <input type="text" placeholder="Họ Tên" required>
-                                </li>
-                                <li>
-                                    <input type="tel" name="phone" id="phone" placeholder="Số Điện Thoại" pattern="[0-9]{10} " required>
-                                </li>
-                                <li>
-                                    <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                                </li>
-                                <li>
-                                </li>
-                            </ul>
-                            <button type="submit">Submit</button>
-                        </form>
+                    <div class="body">
+                        <div class="action">
+                            <h2 class="heading">Liên Hệ</h2>
+                            <form class="action">
+                                <ul>
+                                    <li>
+                                        <input type="text" placeholder="Họ Tên (*)" required>
+                                    </li>
+                                    <li>
+                                        <input type="tel" name="phone" id="phone" placeholder="Số Điện Thoại (*)" pattern="[0-9]{10} " required>
+                                    </li>
+                                    <li>
+                                        <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                    </li>
+                                    <li>
+                                    </li>
+                                </ul>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                        
     
                         <div class="social-media">
                             <span>Qua Các Trang Mạng Xã Hội</span>
@@ -206,7 +209,35 @@
                             </ul>
                         </div>
                     </div>
+                </div>
 
+                <div class="branches">
+                    <h2 class="heading">Chi Nhanh</h2>
+                    <div class="container">
+                        <div class="circle-container">
+                            <div class="circle">
+                                <button id="close">
+                                    <i class="fa-solid fa-xmark">
+                
+                                    </i>
+                                </button>
+                
+                                <button id="open">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Danh sach chi nhanh</p>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><i class="fa-solid fa-house"></i></li>
+                            <li><i class="fa-solid fa-user"></i></li>
+                            <li><i class="fa-solid fa-envelope"></i></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
